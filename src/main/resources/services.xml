@@ -5,7 +5,7 @@
 
     <import resource="daos.xml"/>
 
-    <bean id="userService" class="com.fzt.UserService">
+    <bean id="userService" class="com.fzt.UserServiceImpl">
         <property name="userDao" ref="userDao"/>
     </bean>
 </beans>
