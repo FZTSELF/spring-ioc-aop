@@ -20,10 +20,12 @@ public class ProxyUserServiceJdk implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        System.out.println("before");
         Date start=new Date();
         Object result=method.invoke(target,args);
         Date end=new Date();
-        System.out.println(" 执行时间"+ (end.getTime()-start.getTime()));
+        System.out.println("after");
+        System.out.println("执行时间"+ (end.getTime()-start.getTime()));
         return result;
     }
 }

@@ -26,6 +26,7 @@ public class UserServiceImpl implements UserService {
 //        userDao.save();
 //        Date end=new Date();
 //        System.out.println(end.getTime()-start.getTime());
+        update();
         System.out.println("service save");
     }
 

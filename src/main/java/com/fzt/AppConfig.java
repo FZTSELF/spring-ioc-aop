@@ -23,10 +23,10 @@ public class AppConfig {
 //        return new UserDao();
 //    }
 
-    @EventListener
-    public void refreshedListener(ContextRefreshedEvent event){
-        System.out.println(event.getTimestamp());
-        ApplicationContext context=event.getApplicationContext();
-        CollectionUtils.arrayToList(context.getBeanDefinitionNames()).forEach(item-> System.out.println(item));
-    }
+//    @EventListener
+//    public void refreshedListener(ContextRefreshedEvent event){
+//        System.out.println(event.getTimestamp());
+//        ApplicationContext context=event.getApplicationContext();
+//        CollectionUtils.arrayToList(context.getBeanDefinitionNames()).forEach(item-> System.out.println(item));
+//    }
 }
